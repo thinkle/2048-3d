@@ -573,53 +573,65 @@ hr {
 }
 .tile.tile-bonus .cube-face {
   background: #776e65;
+  color: transparent; 
+}
+.tile.tile-bonus {
+  color : transparent !important;
+}
+.tile.tile-bonus .cube-face::after {
+  content: "☹️";
   color: #eee4da;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
 }
 .tile.tile-2 .cube-face {
   background: #eee4da;
+  
 }
 .tile.tile-bonus.tile-2 .cube-face {
-  background: #776e65;
-  color: #eee4da;
+  background: #776e65;  
+  color: transparent;
 }
 .tile.tile-4 .cube-face {
   background: #ede0c8;
 }
 .tile.tile-bonus.tile-4 .cube-face {
-  background: #776e65;
-  color: #ede0c8;
+  background: #776e65;  color: transparent;
 }
 .tile.tile-8 .cube-face {
   color: #f9f6f2;
   background: #f2b179;
 }
 .tile.tile-bonus.tile-8 .cube-face {
-  background: #f9f6f2;
-  color: #f2b179;
+  background: #f9f6f2;    
 }
 .tile.tile-16 .cube-face {
   color: #f9f6f2;
   background: #f59563;
 }
 .tile.tile-bonus.tile-16 .cube-face {
-  background: #f9f6f2;
-  color: #f59563;
+  background: #f9f6f2;  
+  color: transparent;
 }
 .tile.tile-32 .cube-face {
   color: #f9f6f2;
   background: #f67c5f;
 }
 .tile.tile-bonus.tile-32 .cube-face {
-  background: #f9f6f2;
-  color: #f67c5f;
+  background: #f9f6f2;  
 }
 .tile.tile-64 .cube-face {
   color: #f9f6f2;
   background: #f65e3b;
 }
 .tile.tile-bonus.tile-64 .cube-face {
-  background: #f9f6f2;
-  color: #f65e3b;
+  color: transparent;
+  background: #f65e3b;
 }
 .tile.tile-128 .cube-face {
   color: #f9f6f2;
@@ -628,8 +640,7 @@ hr {
   box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
 }
 .tile.tile-bonus.tile-128 .cube-face {
-  background: #f9f6f2;
-  color: #edcf72;
+  background: orange;  
 }
 @media screen and (max-width: 520px) {
   .tile.tile-128 .cube-face {
@@ -643,8 +654,8 @@ hr {
   box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
 }
 .tile.tile-bonus.tile-256 .cube-face {
-  background: #f9f6f2;
-  color: #edcc61;
+  background: yellowgreen;  
+  color: transparent;
 }
 @media screen and (max-width: 520px) {
   .tile.tile-256 .cube-face {
@@ -658,8 +669,8 @@ hr {
   box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
 }
 .tile.tile-bonus.tile-512 .cube-face {
-  background: #f9f6f2;
-  color: #edc850;
+  background: red;  
+  color: transparent;
 }
 @media screen and (max-width: 520px) {
   .tile.tile-512 .cube-face {
@@ -674,7 +685,7 @@ hr {
 }
 .tile.tile-bonus.tile-1024 .cube-face {
   background: #f9f6f2;
-  color: #edc53f;
+  color: transparent
 }
 @media screen and (max-width: 520px) {
   .tile.tile-1024 .cube-face {
@@ -689,7 +700,7 @@ hr {
 }
 .tile.tile-bonus.tile-2048 .cube-face {
   background: #f9f6f2;
-  color: #edc22e;
+  color: transparent;
 }
 @media screen and (max-width: 520px) {
   .tile.tile-2048 .cube-face {
@@ -874,7 +885,7 @@ hr {
   transform-origin: 50% 50%;
 }
 .touch-buttons {
-  display: none;
+  display: block;
   height: 90px;
   line-height: 40px;
   text-align: center;
