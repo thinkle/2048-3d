@@ -572,7 +572,7 @@ hr {
   font-size: 55px;
 }
 .tile.tile-bonus .cube-face {
-  background: #776e65;
+  background: #d2d2d2c6;
   color: transparent; 
 }
 .tile.tile-bonus {
@@ -590,57 +590,59 @@ hr {
   place-content: center;
 }
 .tile.tile-2 .cube-face {
-  background: #eee4da;
+  background: #dbeefa;
+  color: #020C12;
   
 }
 .tile.tile-bonus.tile-2 .cube-face {
-  background: #776e65;  
+  background: #b8b8b8;  
   color: transparent;
 }
 .tile.tile-4 .cube-face {
-  background: #ede0c8;
+  background: #4babe7;
+  color: white;
 }
 .tile.tile-bonus.tile-4 .cube-face {
-  background: #776e65;  color: transparent;
+  background: #7b7b7b;  color: transparent;
 }
 .tile.tile-8 .cube-face {
   color: #f9f6f2;
-  background: #f2b179;
+  background: #8dc83fb3;
 }
 .tile.tile-bonus.tile-8 .cube-face {
-  background: #f9f6f2;    
+  background: #ededed;    
 }
 .tile.tile-16 .cube-face {
   color: #f9f6f2;
-  background: #f59563;
+  background: #ccf42d;
 }
 .tile.tile-bonus.tile-16 .cube-face {
-  background: #f9f6f2;  
+  background: #3a3a3a;  
   color: transparent;
 }
 .tile.tile-32 .cube-face {
   color: #f9f6f2;
-  background: #f67c5f;
+  background: #f78154;
 }
 .tile.tile-bonus.tile-32 .cube-face {
-  background: #f9f6f2;  
+  background: #717171;  
 }
 .tile.tile-64 .cube-face {
   color: #f9f6f2;
-  background: #f65e3b;
+  background: #af3808;
 }
 .tile.tile-bonus.tile-64 .cube-face {
   color: transparent;
-  background: #f65e3b;
+  background: #1f1f1f;
 }
 .tile.tile-128 .cube-face {
   color: #f9f6f2;
-  background: #edcf72;
+  background: #d8caff;
   font-size: 45px;
   box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
 }
 .tile.tile-bonus.tile-128 .cube-face {
-  background: orange;  
+  background: rgb(229, 229, 229);  
 }
 @media screen and (max-width: 520px) {
   .tile.tile-128 .cube-face {
@@ -649,12 +651,12 @@ hr {
 }
 .tile.tile-256 .cube-face {
   color: #f9f6f2;
-  background: #edcc61;
+  background: #aa88f4;
   font-size: 45px;
   box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
 }
 .tile.tile-bonus.tile-256 .cube-face {
-  background: yellowgreen;  
+  background: rgb(94, 84, 63);  
   color: transparent;
 }
 @media screen and (max-width: 520px) {
@@ -664,12 +666,12 @@ hr {
 }
 .tile.tile-512 .cube-face {
   color: #f9f6f2;
-  background: #edc850;
+  background: #ffb22d;
   font-size: 45px;
   box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
 }
 .tile.tile-bonus.tile-512 .cube-face {
-  background: red;  
+  background: rgb(130, 130, 130);  
   color: transparent;
 }
 @media screen and (max-width: 520px) {
@@ -679,7 +681,7 @@ hr {
 }
 .tile.tile-1024 .cube-face {
   color: #f9f6f2;
-  background: #edc53f;
+  background: #b350be;
   font-size: 28px;
   box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
 }
