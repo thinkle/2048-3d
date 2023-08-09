@@ -1,10 +1,10 @@
-@import url(http://lab.qiyuuu.com/2048/style/fonts/clear-sans.css);
+
  html, body {
   margin: 0;
   padding: 0;
-  background: #bbada0;
-  color: #776e65;
-  font-family:"Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  background: #21201f;
+  color: #fffbf7;
+  font-family: 'Bild Variable Web';
   font-size: 18px;
 }
 body {
@@ -108,7 +108,7 @@ p {
   line-height: 1.65;
 }
 a {
-  color: #776e65;
+  color: #bee8ff;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
@@ -592,6 +592,7 @@ hr {
 .tile.tile-2 .cube-face {
   background: #dbeefa;
   color: #020C12;
+  font-weight: 300;
   
 }
 .tile.tile-bonus.tile-2 .cube-face {
@@ -601,6 +602,7 @@ hr {
 .tile.tile-4 .cube-face {
   background: #4babe7;
   color: white;
+  font-weight: 300;
 }
 .tile.tile-bonus.tile-4 .cube-face {
   background: #7b7b7b;  color: transparent;
@@ -611,18 +613,28 @@ hr {
 }
 .tile.tile-bonus.tile-8 .cube-face {
   background: #ededed;    
+  font-weight: 400;
 }
 .tile.tile-16 .cube-face {
   color: #f9f6f2;
+  text-shadow: 
+    1px -1px #272625cc,
+    1px 1px #272625cc,
+    -1px -1px #272625cc,
+     -1px -1px #272625cc;
   background: #ccf42d;
+  font-weight: 600;
+  
 }
 .tile.tile-bonus.tile-16 .cube-face {
   background: #3a3a3a;  
   color: transparent;
+  font-weight: 400;
 }
 .tile.tile-32 .cube-face {
   color: #f9f6f2;
   background: #f78154;
+  font-weight: 500;
 }
 .tile.tile-bonus.tile-32 .cube-face {
   background: #717171;  
@@ -658,6 +670,7 @@ hr {
 .tile.tile-bonus.tile-256 .cube-face {
   background: rgb(94, 84, 63);  
   color: transparent;
+  font-weight: 600;
 }
 @media screen and (max-width: 520px) {
   .tile.tile-256 .cube-face {
@@ -677,16 +690,19 @@ hr {
 @media screen and (max-width: 520px) {
   .tile.tile-512 .cube-face {
     font-size: 15px;
+    font-weight: 700;
   }
 }
 .tile.tile-1024 .cube-face {
   color: #f9f6f2;
   background: #b350be;
   font-size: 28px;
+  font-weight: 800;
   box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
 }
 .tile.tile-bonus.tile-1024 .cube-face {
   background: #f9f6f2;
+  
   color: transparent
 }
 @media screen and (max-width: 520px) {
@@ -697,7 +713,9 @@ hr {
 .tile.tile-2048 .cube-face {
   color: #f9f6f2;
   background: #edc22e;
-  font-size: 28px;
+  font-size: 52px;
+  font-stretch: 50%;
+  font-weight: 900;
   box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
 }
 .tile.tile-bonus.tile-2048 .cube-face {
